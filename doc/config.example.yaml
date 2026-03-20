@@ -1,0 +1,23 @@
+# bonk config — maps bonk patterns to apps
+# Copy this to ~/.bonk.yaml, or run: bonk init
+
+bindings:
+  1: "Spotify"      # single bonk → open Spotify
+  2: "Terminal"     # double bonk → open Terminal
+  3: "Safari"       # triple bonk → open Safari
+  # 4: "Finder"    # quadruple bonk (uncomment to enable)
+  # 5: "Calendar"  # 5x bonk
+
+settings:
+  # Minimum g-force to register a bonk (lower = more sensitive)
+  # Range: 0.0 (any vibration) to 1.0 (very hard hit only)
+  min_amplitude: 0.05
+
+  # How long (ms) to wait after the first bonk for more bonks
+  # before firing the action. Increase if double-bonks aren't
+  # registering reliably on your desk/surface.
+  pattern_window_ms: 500
+
+  # Minimum time (ms) between pattern triggers (prevents accidental
+  # double-firing from surface vibration after a bonk).
+  cooldown_ms: 1000

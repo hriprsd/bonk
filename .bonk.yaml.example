@@ -1,0 +1,28 @@
+# bonk config — maps slap patterns to apps
+# Run: sudo bonk
+# Tip: run 'sudo bonk calibrate' to see what amplitude your slaps produce
+
+bindings:
+  1: "Spotify"      # 1x slap
+  2: "Terminal"     # 2x slap
+  3: "Safari"       # 3x slap
+  # 4: "Finder"    # 4x slap (uncomment to enable)
+  # 5: "Calendar"  # 5x slap
+
+settings:
+  # Minimum g-force to register a slap (lower = more sensitive).
+  # Use 'sudo bonk calibrate' to find the right value for your machine.
+  min_amplitude: 0.30
+
+  # How long (ms) to wait after the first slap for more slaps
+  # before firing the action. Increase if multi-slap patterns
+  # aren't registering reliably.
+  pattern_window_ms: 800
+
+  # Minimum time (ms) between pattern triggers (prevents accidental
+  # double-firing from vibration).
+  cooldown_ms: 1000
+
+  # Minimum gap (ms) between individual slap events. Events closer
+  # than this are treated as aftershock vibration from the same hit.
+  debounce_ms: 350

@@ -1,0 +1,6 @@
+/bonk
+dist/
+*.log
+.crush
+result
+.vscode/
